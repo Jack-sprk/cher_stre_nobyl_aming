@@ -98,6 +98,10 @@ h2{
         justify-content:center;
     }
 
+    .episodes{
+        padding: 0%;
+    }
+    
     .episodes button {
         padding: 1.5vw 1.5vw;
         font-size: 3.5vw;
