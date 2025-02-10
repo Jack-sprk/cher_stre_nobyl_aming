@@ -102,11 +102,6 @@ h2{
         padding: 1.5vw 1.5vw;
         font-size: 3.5vw;
         margin: 4vw 0vw 4vw 0vw;
-    
-        font-family: "Lexend Giga", serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
     }
 
     h1{
@@ -122,8 +117,5 @@ h2{
 
     .video_container{
         width: 75vw;
-        display: flex;
-        justify-content: center;
-        margin-inline: auto;
     }
 }
