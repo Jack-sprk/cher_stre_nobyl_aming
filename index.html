@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Chernobyl Streaming Ep.1</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="style_general.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Rubik+Glitch&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Chernobyl</h1>
+    
+        <div class="episodes">
+            <button onclick="changeVideo('https://www.dropbox.com/scl/fi/wuvcfasyv4e65qv07vfg1/ChernobylE01.mp4?rlkey=1rlzr9va1ve6cphc1jqoq2juo&st=gprzg1gb&raw=1', '1')">Ep. 1</button>
+            <button onclick="changeVideo('https://www.dropbox.com/scl/fi/ucu34qnff80h8xctwyuks/ChernobylE02.mp4?rlkey=7l4lrmdl6qu9s890y3cd3gp4r&st=fze6ekyg&raw=1', '2')">Ep. 2</button>
+            <button onclick="changeVideo('https://www.dropbox.com/scl/fi/otkkn86x437r90rnso9mb/ChernobylE03.mp4?rlkey=bzmugpuwrw3c1clww452po2xs&st=7wjdpfiq&raw=1', '3')">Ep. 3</button>
+            <button onclick="changeVideo('https://www.dropbox.com/scl/fi/4r64kk1t93qpw0waf3cvy/ChernobylE04.mp4?rlkey=i8l42l5qx7h5vfqfa9fdk8d78&st=9mrp36m9&raw=1', '4')">Ep. 4</button>
+            <button onclick="changeVideo('https://www.dropbox.com/scl/fi/mxhsy535kacmw6bddzz61/ChernobylE05.mp4?rlkey=4kbfechvjv5t4sgkc3tft1wae&st=b77lce4b&raw=1', '5')">Ep. 5</button>
+        </div>
+    </div>
+
+    <h2 id="epNumber">Episode 1</h2>
+    
+    <div class="video_container">
+        <video id="videoPlayer" playsinline controls>
+            <source src="https://www.dropbox.com/scl/fi/wuvcfasyv4e65qv07vfg1/ChernobylE01.mp4?rlkey=1rlzr9va1ve6cphc1jqoq2juo&st=gprzg1gb&raw=1" type="video/mp4">
+        </video>    
+    </div>
+
+    <script>
+        function changeVideo(link, number) {
+            let video = document.getElementById("videoPlayer");
+            video.src = link;
+
+            let title = document.getElementById("epNumber");
+            title.textContent = "Episode " + number;
+        }
+    </script>
+
+</body>
+
+</html>
