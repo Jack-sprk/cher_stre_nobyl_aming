@@ -111,11 +111,11 @@ h2{
 
     h2{
         font-size: 8vw;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
 
     .video_container{
-        width: 75vw;
+        width: 100%;
     }
 }
